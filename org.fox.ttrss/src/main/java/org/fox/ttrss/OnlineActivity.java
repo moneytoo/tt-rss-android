@@ -177,7 +177,7 @@ public class OnlineActivity extends CommonActivity {
 		if (isOffline) {
 			switchOfflineSuccess();			
 		} else {
-			checkTrial(false);
+			//checkTrial(false);
 			
 			m_headlinesActionModeCallback = new HeadlinesActionModeCallback();
 		}
@@ -1102,16 +1102,16 @@ public class OnlineActivity extends CommonActivity {
 
 		initMenu();
 		
-		List<PackageInfo> pkgs = getPackageManager()
+		/*List<PackageInfo> pkgs = getPackageManager()
 				.getInstalledPackages(0);
 
 		for (PackageInfo p : pkgs) {
 			if ("org.fox.ttrss.key".equals(p.packageName)) {
-				Log.d(TAG, "license apk found");
+				Log.d(TAG, "license apk found");*/
 				menu.findItem(R.id.donate).setVisible(false);
-				break;
+				/*break;
 			}
-		}
+		}*/
 		
 		return true;
 	}

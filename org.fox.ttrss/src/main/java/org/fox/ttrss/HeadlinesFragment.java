@@ -1415,7 +1415,8 @@ public class HeadlinesFragment extends Fragment {
 					holder.flavorImageView.setOnClickListener(new OnClickListener() {
 						@Override
 						public void onClick(View view) {
-							openGalleryForType(article, holder, holder.flavorImageView);
+							//openGalleryForType(article, holder, holder.flavorImageView);
+							m_listener.onArticleSelected(article);
 						}
 					});
 				}

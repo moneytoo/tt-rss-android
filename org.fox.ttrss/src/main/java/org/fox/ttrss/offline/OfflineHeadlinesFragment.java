@@ -992,7 +992,8 @@ public class OfflineHeadlinesFragment extends Fragment implements OnItemClickLis
                             @Override
                             public void onClick(View view) {
 
-								openGalleryForType(afi, articleTitle, articleContent, holder, holder.flavorImageView);
+								//openGalleryForType(afi, articleTitle, articleContent, holder, holder.flavorImageView);
+								m_listener.onArticleSelected(articleId);
                             }
                         });
 
